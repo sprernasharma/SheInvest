@@ -1,0 +1,176 @@
+#grid {
+        display:grid;
+        justify-content: center;
+        grid-column-gap:10px;
+        grid-template-rows: auto;
+      }
+      
+      #header {
+        grid-area: header;
+      }
+
+      #profile {
+      	grid-area: profile;
+      	background-color: red;
+        margin-top: 30px;
+      }
+
+      #profiletext1 {
+      	grid-area: profiletext1;
+        margin-top: 30px;
+      }
+
+      #profiletext1 .card {
+        border: 0;
+      }
+
+      #profiletext2 {
+      	grid-area: profiletext2;
+      }
+
+      #profiletext2 .card {
+        border: 0;
+      }
+
+      #profiletext3 {
+      	grid-area: profiletext3;
+      }
+
+      #profiletext3 .card {
+        border: 0;
+      }
+
+      #profiletext4 {
+      	grid-area: profiletext4;
+      	background-color: green;
+      }
+
+      #profiletext4 .card {
+        border: 0;
+      }
+
+      #connectbutton1 {
+      	grid-area: connectbutton1;
+      }
+
+      #connectbutton2 {
+      	grid-area: connectbutton2;
+      }
+
+      #icon1 {
+      	grid-area: icon1;
+        margin-top: 30px;
+      }
+
+      #icon2 {
+      	grid-area: icon2;
+        margin-top: 30px;
+      }
+
+      #icon3 {
+      	grid-area: icon3;
+        margin-top: 30px;
+      }
+
+      #icon1 .card, #icon2 .card, #icon3 .card, #morelikethis .card {
+      	border: 0;
+      }
+
+      #morelikethis {
+      	grid-area: morelikethis;
+        margin-top: 70px;
+      }
+
+      #morelikethis .card {
+        border: 0;
+      }
+
+      #first {
+        grid-area: first;
+      }
+
+      #second {
+        grid-area: second;
+      }
+
+      #third {
+        grid-area: third;
+      }
+
+      #fourth {
+        grid-area: fourth;
+      }
+
+
+      #footer {
+        grid-area: footer;
+        background-color:slategray;
+      }
+
+      @media only screen and (min-width: 1241px) {
+        #grid {
+          grid-template-columns: repeat(8, 145px);
+          grid-row-gap: 10px;
+          grid-template-areas: 
+            "header   header   header   header   header   header header header"
+            ". profile profile profile profiletext1 profiletext1 profiletext1 ."
+            ". profile profile profile profiletext2 profiletext2 profiletext2 ."
+            ". profile profile profile profiletext3 profiletext3 profiletext3 ."
+            ". connectbutton1 connectbutton1 connectbutton1 profiletext4 profiletext4 profiletext4 ."
+            ". connectbutton2 connectbutton2 connectbutton2 profiletext4 profiletext4 profiletext4 ."
+            ". . icon1 . icon2 . icon3 ."
+            "morelikethis morelikethis morelikethis morelikethis morelikethis morelikethis morelikethis morelikethis"
+            "first first second second third third fourth fourth"
+            "footer   footer   footer   footer   footer   footer   footer footer"
+        }
+      }
+      
+      @media only screen and (max-width: 1240px) {
+        #grid {
+          grid-template-columns: repeat(6, 145px);
+          grid-row-gap: 20px;
+          grid-template-areas: 
+            "header   header   header   header   header   header"
+            "lede lede lede lede lede buttons"
+            "sidebar sidebar first   second   third    ."
+            "sidebar sidebar . . . moreclients"
+            "sidebar sidebar overview1 overview2 overview3 overview4"
+            "footer   footer   footer   footer   footer footer"
+        }
+      }
+      
+      @media only screen and (max-width: 975px) {
+        #grid {
+          grid-template-columns: repeat(4, 25%);
+          grid-row-gap: 10px;
+          grid-template-areas: 
+            "header   header   header   header"
+            "lede    lede    lede    buttons"
+            "first first "
+            "second   second   third    third"
+            "sidebar   sidebar moreclients moreclients"
+            "overview1 overview2 overview3 overview4"
+            "footer   footer   footer   footer"
+        }
+      }
+      
+      @media only screen and (max-width: 655px) {
+        #grid {
+          grid-template-columns: repeat(2, 50%); 
+          grid-row-gap: 10px;
+          grid-template-areas: 
+            "header   header"
+            "lede    lede"
+            "buttons buttons"
+            "first first"
+            "second   second"
+            "third    third"
+            "moreclients moreclients"
+            "sidebar   sidebar"
+            "overview1 overview1"
+            "overview2 overview2"
+            "overview3 overview3"
+            "overview4 overview4"
+            "footer   footer"
+        }
+      }
