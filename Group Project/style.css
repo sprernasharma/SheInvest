@@ -52,7 +52,10 @@
         grid-area: footer;
         background-color:slategray;
       }
-             
+
+   .list-inline-item {
+    font-size:170%;
+        }         
       
 a {
     color: white;
