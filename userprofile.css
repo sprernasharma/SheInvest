@@ -137,6 +137,10 @@
       #card-text {
         background-color: green;
       }
+
+    .list-inline-item {
+    font-size:170%;
+        }
       
       @media only screen and (min-width: 1241px) {
         #grid {
