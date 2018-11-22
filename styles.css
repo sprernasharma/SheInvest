@@ -1,0 +1,120 @@
+#grid {
+        display:grid;
+        justify-content: center;
+        grid-gap:10px;
+        grid-template-rows: auto;
+      }
+      
+      #header {
+        grid-area: header;
+        background-color:slategray;
+      }
+      
+      #lede {
+        grid-area: lede;
+      }
+.card-text {
+    font-size: 160%;
+}
+      
+      #second {
+        grid-area: second;
+      }
+​
+      #second .card, #third .card, #fourth .card, #fifth .card {
+        border:0;
+      }
+.form-control mr-sm-2 {
+    size: 50px;
+}
+
+    #third {
+    grid-area: third;
+      }
+      
+    #fourth {
+    grid-area: fourth;
+        }
+
+    #fifth {
+    grid-area: fifth;
+
+    }
+
+
+    #sidebar {
+    grid-area: sidebar;
+      }
+    #button {
+    background-color:#00b2a9;
+    margin-bottom: 10px;
+    }
+
+      
+  #footer {
+        grid-area: footer;
+        background-color:slategray;
+      }
+             
+      
+a {
+    color: white;
+}
+      
+      @media only screen and (min-width: 1241px) {
+        #grid {
+          grid-template-columns: repeat(8, 145px);
+          grid-template-areas: 
+            "header   header   header   header   header   header header header"
+            "lede    lede    lede    lede    lede   lede   sidebar sidebar"
+            "second    second    second    second    third    third   sidebar sidebar"
+            "fourth  fourth   fourth   fourth  fifth   fifth    fifth   fifth"
+            "footer   footer   footer   footer   footer   footer   footer footer"
+            "footer   footer   footer   footer   footer   footer   footer footer"
+        }
+      }
+      
+      @media only screen and (max-width: 1240px) {
+        #grid {
+          grid-template-columns: repeat(6, 145px);
+          grid-template-areas: 
+            "header   header   header   header   header   header"
+            "lede    lede    lede    lede    sidebar sidebar"
+            "second   second   third    third    sidebar sidebar"
+            "fourth  fourth   fifth   fifth  fifth    fifth"
+            "footer footer  footer   footer  footer footer"
+            "footer   footer   footer   footer   footer footer"
+        }
+      }
+      
+      @media only screen and (max-width: 975px) {
+        #grid {
+          grid-template-columns: repeat(4, 25%);
+          grid-template-areas: 
+            "header   header   header   header"
+            "lede    lede    lede    lede"
+            "second   second   third    third"
+            ".     sidebar   sidebar   ."
+            "fourth  fourth   fifth   fifth"
+            "footer  footer  footer  footer"
+            "footer   footer   footer   footer"
+        }
+      }
+      
+      @media only screen and (max-width: 655px) {
+        #grid {
+          grid-template-columns: repeat(2, 50%); 
+          grid-template-areas: 
+            "header   header"
+            "lede    lede"
+            "second   second"
+            "third    third"
+            "sidebar   sidebar"
+            "fourth  fourth"
+            "fifth  fifth"
+            "footer   footer"
+        }
+          
+      
+
+      }
