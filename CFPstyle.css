@@ -17,6 +17,10 @@
         grid-area: header;
       }
 
+      .list-inline-item {
+    font-size:170%;
+        }
+
       #profile {
       	grid-area: profile;
         margin-top: 30px;

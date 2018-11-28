@@ -14,6 +14,10 @@ body {
         grid-area: header;
       }
 
+      .list-inline-item {
+    font-size:170%;
+        }
+
       .buttonsforleads {
         display: inline-flex;
       }
