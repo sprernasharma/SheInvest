@@ -46,22 +46,19 @@
     #sidebar {
     grid-area: sidebar;
       }
+
     #button {
-    background-color:#00b2a9;
+    background-color:##C9E3DB;
     margin-bottom: 10px;
     }
 
       
   #footer {
         grid-area: footer;
-        background-color:slategray;
+        background-color:#00b2a9;
       }
              
-      
-a {
-    color: white;
-}
-      
+       
       @media only screen and (min-width: 1241px) {
         #grid {
           grid-template-columns: repeat(8, 145px);
