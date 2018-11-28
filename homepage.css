@@ -13,10 +13,10 @@
         grid-area: header;
         background-color:brown;
       }
-      #signup{
-        border-radius: 10px;
 
-      }
+    .list-inline-item {
+   font-size:170%;
+       }
       #one {
         grid-area: one;
       }
