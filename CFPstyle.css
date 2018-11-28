@@ -1,18 +1,26 @@
-#grid {
+      body {
+        font-family: 'Lato', sans-serif;
+      }
+
+      #grid {
         display:grid;
         justify-content: center;
         grid-column-gap:10px;
         grid-template-rows: auto;
       }
-      
+      .icons .card img {
+        height:40px;
+        width:40px;
+        text-align:center;
+      }
       #header {
         grid-area: header;
       }
 
       #profile {
       	grid-area: profile;
-      	background-color: red;
         margin-top: 30px;
+        border: 0;
       }
 
       #profiletext1 {
@@ -20,45 +28,64 @@
         margin-top: 30px;
       }
 
-      #profiletext1 .card {
+      #profiletext1 .card, #profiletext2 .card, #profiletext3 .card, #profiletext4 .card  {
         border: 0;
+        margin-left: 40px;
       }
 
       #profiletext2 {
       	grid-area: profiletext2;
       }
 
-      #profiletext2 .card {
-        border: 0;
-      }
-
       #profiletext3 {
       	grid-area: profiletext3;
       }
 
-      #profiletext3 .card {
-        border: 0;
-      }
-
       #profiletext4 {
       	grid-area: profiletext4;
-      	background-color: green;
-      }
-
-      #profiletext4 .card {
-        border: 0;
+        font-size: 20px;
+        margin-top: 30px;
       }
 
       #connectbutton1 {
       	grid-area: connectbutton1;
       }
 
+      mark {
+        background-color: #c6fffc;
+  font-style: italic;
+  text-align: center;
+  border-left: 5px solid #00b2a9;
+  padding: 30px;
+  width: 800px;
+  margin:0 auto;
+  
+      }
+
+      #icon2 h5, #icon3 h5, #icon1 h5 {
+        text-align: : center;
+      }
+
+      .btn {
+        background-color: #00b2a9;
+        color: #ffffff;
+      }
+
       #connectbutton2 {
       	grid-area: connectbutton2;
       }
 
+      h5 a {
+        color: #00b2a9;
+      }
+
       #icon1 {
       	grid-area: icon1;
+        margin-top: 30px;
+      }
+
+       #icons {
+        grid-area: icons;
         margin-top: 30px;
       }
 
@@ -97,10 +124,26 @@
         grid-area: third;
       }
 
-      #fourth {
-        grid-area: fourth;
+      h5 img {
+        margin-right: 20px;
       }
 
+      #profiletext1 .card p, #profiletext2 .card p, #profiletext3 .card p {
+        margin-left: 70px;
+      } 
+
+      #icon1 .icons {
+        justify-content: center;
+        display: inline-block;
+      }
+
+      #first, #second, #third {
+        margin-bottom: 50px;
+      }
+
+      #clientstatus {
+        color: #ffffff;
+      }
 
       #footer {
         grid-area: footer;
@@ -113,14 +156,13 @@
           grid-row-gap: 10px;
           grid-template-areas: 
             "header   header   header   header   header   header header header"
-            ". profile profile profile profiletext1 profiletext1 profiletext1 ."
-            ". profile profile profile profiletext2 profiletext2 profiletext2 ."
-            ". profile profile profile profiletext3 profiletext3 profiletext3 ."
-            ". connectbutton1 connectbutton1 connectbutton1 profiletext4 profiletext4 profiletext4 ."
-            ". connectbutton2 connectbutton2 connectbutton2 profiletext4 profiletext4 profiletext4 ."
-            ". . icon1 . icon2 . icon3 ."
-            "morelikethis morelikethis morelikethis morelikethis morelikethis morelikethis morelikethis morelikethis"
-            "first first second second third third fourth fourth"
+            ". profile profile  profiletext1 profiletext1 profiletext1 profiletext1 ."
+            ". profile profile  profiletext2 profiletext2 profiletext2 profiletext2 ."
+            ". profile profile  profiletext3 profiletext3 profiletext3 profiletext3 ."
+            ". icon1 icon1 icon2 icon2 icon3 icon3 ."
+            ". profiletext4 profiletext4 profiletext4 profiletext4 profiletext4 profiletext4 ."
+            ". morelikethis morelikethis morelikethis morelikethis morelikethis morelikethis morelikethis"
+            ". first first second second third third ."
             "footer   footer   footer   footer   footer   footer   footer footer"
         }
       }
