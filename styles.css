@@ -16,7 +16,10 @@
 .card-text {
     font-size: 160%;
 }
-      
+       .list-inline-item {
+    font-size:170%;
+        }
+
       #second {
         grid-area: second;
       }
