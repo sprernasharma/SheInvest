@@ -1,294 +1,277 @@
 <!doctype html>
-<html lang="en">
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+body {font-family: Arial, Helvetica, sans-serif;}
 
-	<head>
-<<<<<<< HEAD
-<<<<<<< HEAD
-        <title>Sandboxffff</title>
-=======
-=======
-        <title>Sandbox</title>
-        <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
->>>>>>> master
-        <title>Sheinvest</title>
->>>>>>> master
-        <link type="text/css" rel="stylesheet" href="style.css">
-    	<!-- Required meta tags -->
-    	<meta charset="utf-8">
-    	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    	<!-- Bootstrap CSS -->
-    	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-    	<link type="text/css" rel="stylesheet" href="style.css">
-  	</head>
-  	  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
-	</head>
+/* Full-width input fields */
+input[type=text], input[type=password] {
+    width: 50%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
 
+/* Set a style for all buttons */
+#joinnow {
+    background-color: darkblue;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border:none;
+    border-radius: 8px;
+    cursor: pointer;
+    width: 50%;
+}
+
+#joinnow:hover {
+    opacity: 0.8;
+}
+
+/* Extra styles for the cancel button */
+.cancelbtn {
+    width: auto;
+    padding: 10px 18px;
+    background-color: #f44336;
+}
+
+/* Center the image and position the close button */
+.imgcontainer {
+    text-align: center;
+    margin: 24px 0 12px 0;
+    position: relative;
+}
+
+img.avatar {
+    width: 10%;
+    border-radius: 50%;
+}
+
+.container {
+    padding: 16px;
+}
+
+span.psw {
+    padding-top: 16px;
+}
+
+/* The Modal (background) */
+#id01 {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    text-align: center;
+    top: 0;
+    width: 50%; /* Full width */
+    margin: 50px auto;
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color:#00B289;
+    opacity: 0.9;
+    /*background-color: rgb(0,0,0); /* Fallback color */
+    /*background-color: rgba(0,0,0,0.8); /* Black w/ opacity */
+    padding-top: 60px;
+}
+
+/* Modal Content/Box */
+#id01 .modal-content {
+    background-color: #fefefe;
+    margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+    border: 1px solid #888;
+    width: 80%; /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button (x) */
+.close {
+    position: absolute;
+    right: 25px;
+    top: 0;
+    color: #000;
+    font-size: 35px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: red;
+    cursor: pointer;
+}
+
+/* Add Zoom Animation */
+.animate {
+    -webkit-animation: animatezoom 0.6s;
+    animation: animatezoom 0.6s
+}
+
+
+</style>
+
+     <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+        
+        <link rel="stylesheet" type="text/css" href="homepage.css">
+
+        <title>SheInvest</title>
+        
+    </head>
     <body>
         <div id="grid">
             <div id="header" class="sticky-top">
-            	<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-				  	<a class="navbar-brand" href="#">Navbar</a>
-				  	<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-				    <span class="navbar-toggler-icon"></span>
-				  	</button>
+                
+                <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+                  <a class="navbar-brand" href="#">SheInvest</a>
+                    
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                    </button>
+                    
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav mr-auto">
+                     
+                    <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Blog </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="#">Major Financial Milestones</a>
+                        <a class="dropdown-item" href="#">Investments</a>
+                        </div>
+                      </li>
+                    
+                    <li class="nav-item">
+                    <a class="nav-link" href="#">About Us</a>
+                    </li>
+                      
+                    </ul>
+                    <form class="form-inline my-2 my-lg-0">
+                      <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">  
 
-				  	<div class="collapse navbar-collapse" id="navbarSupportedContent">
-				    	<ul class="navbar-nav mr-auto">
-				      		<li class="nav-item active">
-					        	<a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-					      	</li>
-				      		<li class="nav-item">
-						        <a class="nav-link" href="#">Link</a>
-						    </li>
-				      		<li class="nav-item dropdown">
-				       			<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-				      		   		Dropdown
-				        		</a>
-				        		<div class="dropdown-menu" aria-labelledby="navbarDropdown">
-				          			<a class="dropdown-item" href="#">Action</a>
-				         			<a class="dropdown-item" href="#">Another action</a>
-				          			<div class="dropdown-divider"></div>
-				          			<a class="dropdown-item" href="#">Something else here</a>
-				        		</div>
-				      		</li>
-				   		   	<li class="nav-item">
-				        		<a class="nav-link disabled" href="#">Disabled</a>
-				      		</li>
-				    	</ul>
-				    	<form class="form-inline my-2 my-lg-0">
-				      		<input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-				      		<button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-				    	</form>
-				  	</div>
-				</nav>
+                       <button id="joinnow" onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Join Now</button>
 
-            </div>
-
-
-            <div id="button">
-            <div class="card">
-            <button type="button" class="btn">
-  			View Your Profile 
-			</button>
-		</div>
-	</div>
-
-            <div id="lede">	
-            	<div class="card">
-				  	<div class="card-body">
-					    <h5 class="card-title"><a href="https://www.youtube.com/watch?v=n1Ye-Tlv2EA" target="_blank"> Rachel Green's Dashboard </a></h5>
-					    <p class="card-text">Rating 4.5</p>
-					</div>
-				</div>
-            </div>
-
-            <div id="newleads">
-            	<div class="card">
-            		<mark>
-					    <h5 class="card-title">New Leads</a></h5>
-					    <p> Active (5) Archived </p>
-
-					    <hr>
-					    <div class="Newlead1">
-					    <p>Client Name: Elaine Ramirez</p>
-					    <p>Current Corpus: $100,000</p>
-					    <p>Goals: Pay off $35,000 debt and maintain emergency savings</p>
-
-					    <div class="buttonsforleads">
-					    <div class="Accept"><a href="#" class="btn">Accept</a></div>
-					    <div class="Reject"><a href="#" class="btn">Reject</a></div>
-					</div>
-					</div>
-					
-					<hr>
-
-					<div class="Newlead1">
-					    <p>Client Name: Melissa Hovanes</p>
-					    <p>Current Corpus: $40,000</p>
-					    <p>Goals: Save up for down payment of $50,000</p>
-					    <div class="buttonsforleads">
-					     <div class="Accept"><a href="#" class="btn">Accept</a></div>
-					    <div class="Reject"><a href="#" class="btn">Reject</a></div>
-					</div>
-					</div>
-
-				</mark>
-				</div>
-            </div>
-
-            <div id="opencases">
-            	<div class="card">
-            		<mark>
-					    <h5 class="card-title">My Clients </a></h5>
-				</mark>
-				</div>
-            </div>
-
-            <div id="first">
-            <div class="card">
-				  	<div class="card-body">
-					    <h5 class="card-title"><a href="https://www.youtube.com/watch?v=n1Ye-Tlv2EA" target="_blank"> <img src="star.jpg" class="image" width="20px" height="20px">Sara Wester </a></h5>
-					    <p id="clientstatus"> <mark>Client since August 2018</mark></p>
-
-				  		 <p class="seechat"><a href="#" class="btn">See Chat</a></p>
-					</div>
-				</div>
-			</div>
-
-            <div id="second">
-            <div class="card">
-				  	<div class="card-body">
-					    <h5 class="card-title"><a href="https://www.youtube.com/watch?v=n1Ye-Tlv2EA" target="_blank"> <img src="star.jpg" class="image" width="20px" height="20px">Valerie Nikolas </a></h5>
-					    <p id="clientstatus"> <mark> Client since September 2018</mark></p>
-
-				  		 <p class="seechat"><a href="#" class="btn">See Chat</a></p>
-					</div>
-				</div>
-			</div>
-
-            <div id="third">
-            	<div class="card">
-				  	<div class="card-body">
-					    <h5 class="card-title"><a href="https://www.youtube.com/watch?v=n1Ye-Tlv2EA" target="_blank"> <img src="passivestar.jpg" class="image" width="20px" height="20px">Katie Rice </a></h5>
-					    <p id="clientstatus"><mark> New Client</mark></p>
-
-				  		 <p class="seechat"><a href="#" class="btn">See Chat</a></p>
-					</div>
-				</div>
-			</div>
-
-			<div id="fifth">
-            <div class="card">
-				  	<div class="card-body">
-					    <h5 class="card-title"><a href="https://www.youtube.com/watch?v=n1Ye-Tlv2EA" target="_blank"> <img src="passivestar.jpg" class="image" width="20px" height="20px">Sara Wester </a></h5>
-					    <p id="clientstatus"> <mark>Client since August 2018</mark></p>
-
-				  		 <p class="seechat"><a href="#" class="btn">See Chat</a></p>
-					</div>
-				</div>
-			</div>
-
-            <div id="sixth">
-            <div class="card">
-				  	<div class="card-body">
-					    <h5 class="card-title"><a href="https://www.youtube.com/watch?v=n1Ye-Tlv2EA" target="_blank"> <img src="passivestar.jpg" class="image" width="20px" height="20px">Valerie Nikolas </a></h5>
-					    <p id="clientstatus"> <mark>Client since September 2018</mark></p>
-
-				  		 <p class="seechat"><a href="#" class="btn">See Chat</a></p>
-					</div>
-				</div>
-			</div>	
-
-            <div id="seventh">
-            	<div class="card">
-				  	<div class="card-body">
-					    <h5 class="card-title"><a href="https://www.youtube.com/watch?v=n1Ye-Tlv2EA" target="_blank"> <img src="passivestar.jpg" class="image" width="20px" height="20px">Katie Rice </a></h5>
-					    <p id="clientstatus"> <mark>New Client</mark></p>
-				  		 <p class="seechat"><a href="#" class="btn">See Chat</a></p>
-					</div>
-				</div>
-			</div>
-
-            <div id="sidebar">
-            	<div class="card">
-				  	<div class="card-body">
-					    	<h5> <a href="#">Notifications (5) </a></h5>
-					    <h5> <a href="#">Messages (2) </a> </h5>
-					    <h5> <a href="#">All Clients </a></h5>
-					    <h5> <a href="#">Leads </a></h5>
-					    <h5> <a href="#">Payments (1) </a></h5>
-					    <h5> <a href="#">Help Center </a></h5>
-					</div>
-				</div>	
-            </div>
-            
-
-			<div id="moreclients1">
- 				<div class="card">
-					<button type="button" class="btn">
-  					See All Clients
-					</button>
-				</div>
-			</div>
-
-
-            <div id="overview1">
-            	<div class="card">
-            		<mark>
-				  	<div class="card-body">
-					    <p class="card-text">New Leads this month</p>
-					    <p> 25</p>
-					   </mark>
-					</div>
-				</div>
-			</div>
-
-			<div id="overview2">
-            	<div class="card">
-            		<mark>
-				  	<div class="card-body">
-					   
-					    <p class="card-text">New clients accepted</p>
-					    <p>7</p>
-					</mark>
-					   
-					</div>
-				</div>
-			</div>
-
-			<div id="overview3">
-            	<div class="card">
-            		<mark>
-				  	<div class="card-body">
-					    <p class="card-text">Earnings this month</p>
-					    <p>$13,750</p>
-					</mark>
-					</div>
-				</div>
-			</div>
-
-			<div id="overview4">
-            	<div class="card">
-            		<mark>
-				  	<div class="card-body">
-					    <p class="card-text">Advertising Spend</p>
-					    <p>$3,600</p>
-					</mark>
-					   
-					</div>
-				</div>
-			</div>
-
-			<div id="banner">
-            	<div class="card">
-					    <h5 class="card-title"> <img src="bannerad.jpg" class="responsive"></h5>
-					</div>
-				</div>
-            </div>
-        </mark>
+<div id="id01" class="modal">
+  
+  <form class="modal-content animate" action="/action_page.php">
+    <div class="imgcontainer">
+      <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+      <img src="profilepic.png" alt="Avatar" class="avatar">
     </div>
+
+    <div class="container">
+      <label for="uname"><b>Username</b></label>
+      <input type="text" placeholder="Enter Username" name="uname" required>
+
+      <label for="psw"><b>Password</b></label>
+      <input type="password" placeholder="Enter Password" name="psw" required>
+       <p> 
+      <button type="submit" id="signup">Sign Up For Free</button></p>
+
+      <label>
+        <input type="checkbox" checked="checked" name="remember"> Remember me
+      </label>
+    </div>
+
+    <div class="container" style="background-color:#f1f1f1">
+      <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+      <span class="psw">Forgot <a href="#">password?</a></span>
+    </div>
+  </form>
 </div>
-</mark>	
-
-            <div id="notifications">
-            	<div class="card">
-				  	<div class="card-body">
-					    <h5 class="card-title"><a href="https://www.youtube.com/watch?v=n1Ye-Tlv2EA" target="_blank"> Notifications </a></h5>
-					    <p class="card-text">1. You have a new message from 3 client</p>
-					    <p class="card-text">2. You have 2 new client requests awaiting approval</p>
-
-					    <p class="card-text">3. Someone left you a new review. Check now.
-					    Notification when client pings them
-Calendar
-New Leads - Approve Reject page
-View new feedback</p>
-					</div>
-				</div>
+                    </form>
+                  </div>
+                </nav>  
             </div>
-            
-            	<!-- Footer -->
-<div id="footer" class="page-footer font-small stylish-color-dark pt-4">
+
+       <!-- Button to open the modal login form -->
+<!-- The Modal -->
+
+            <div id="one">
+            	<h1>We are here to help</h1>
+            		<p>SheInvest was founded by three young professionals in providing affordable and tailored financial advising services. We have been through these head-aching process to look for financial advisor, and we want you to just relax with the help from our experts who are familiar with the problems you are facing. Take a quick assessment and receive free one-on-one financial advices.</p>
+
+            		<button type="button" class="btn btn-info">Get Started</button>
+
+            </div>
+           
+            <div id="three">
+            	<div class="card">
+                  <img class="card-img-top" src="coffeelady.jpeg" alt="Card image cap">
+                  <div class="card-body">
+                    <h1 class="card-title"><a>How I Survived a Year in San Francisco with $100,000 in Student Debt </a></h1>
+                    <p class="card-text">Living in the world's most expensive city inspired me to start my own company out of necessity </p>
+                  </div>
+                </div>
+            </div>         
+            <div id="four">
+            	<div class="card">
+                  <img class="card-img-top" src="gold.jpeg" alt="Card image cap">
+                  <div class="card-body">
+                    <h5 class="card-title"><a>Why Yale Law School Accepted My Petition for More Financial Aid</a></h5>
+                  </div>
+                </div>
+            </div>         
+            <div id="five">
+            	<div class="card">
+                  <img class="card-img-top" src="professionalwomen.jpeg" alt="Card image cap">
+                  <div class="card-body">
+                    <h5 class="card-title"><a>How to Create a Grad School Budget</a></h5>
+                  </div>
+                </div>
+            </div>       
+            <div id="six">
+            	<div class="card">
+                  <img class="card-img-top" src="glam.jpeg" alt="Card image cap">
+                  <div class="card-body">
+                    <h5 class="card-title"><a>How I Powered Through My Loans While Living on 50K in NYC</a></h5>
+                  </div>
+                </div>
+            </div>        
+            <div id="seven">
+            	<div class="card"class="card mb-3">
+                <img class="card-img-top" src="unc.jpeg"/100px180/ alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="card-title">Personal Diary</h5>
+                            <p class="card-text">Why I'm Not Afraid to Hide My Student Debt from More Privileged Students at UNC Anymore </p>
+                    </div>
+            </div>
+            </div>        
+            <div id="eight">
+            	<div class="card" class="card text-center">
+                    <div class="card-body">
+                    <h5 class="card-title">Find Your Financial Advisor</h5>
+                        <p class="card-text">Take our smart finance quiz so we can pair you with the best advisor for you.</p>
+                        <a href="#" class="btn btn-primary">Start</a>
+                    </div>
+             </div>     
+            </div>   
+            <div id="nine">our mission</div>
+            <div id="ten">
+            	<div class="card">
+                    <img class="card-img-top" src="kittie.jpg" alt="Card image cap">
+                        <div class="card-body">
+                        <h5 class="card-title"><a href="https://www.youtube.com/watch?v=w8U6VI_51Bg" target="_blank">Card title</a></h5>
+                         <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            <a href="#" class="btn btn-primary">Go somewhere</a>
+                         </div>
+                </div>
+            </div>
+            <div id="eleven">
+            	<div class="card">
+                    <img class="card-img-top" src="kittie.jpg" alt="Card image cap">
+                        <div class="card-body">
+                        <h5 class="card-title"><a href="https://www.youtube.com/watch?v=w8U6VI_51Bg" target="_blank">Card title</a></h5>
+                         <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            <a href="#" class="btn btn-primary">Go somewhere</a>
+                         </div>
+                </div>
+            </div>
+            <div id="footer" class="page-footer font-small stylish-color-dark pt-4">
 
     <!-- Footer Links -->
     <div class="container text-center text-md-left">
@@ -300,36 +283,10 @@ View new feedback</p>
         <div class="col-md-4 mx-auto">
 
           <!-- Content -->
-          <h5 class="font-weight-bold text-uppercase mt-3 mb-4">ChicFin</h5>
+          <h5 class="font-weight-bold text-uppercase mt-3 mb-4">SheInvest</h5>
           <p class="subtext">We are here to help you find the best financial advisor to fit your specialized needs.</p>
 
-      
-	<!-- Social buttons -->
-    <ul class="list-unstyled list-inline text-center">
-      <li class="list-inline-item">
-        <a class="btn-floating btn-fb mx-1">
-          <i class="fab fa-facebook" aria-hidden="true"></i>
-        </a>
-      </li>
-      <li class="list-inline-item">
-        <a class="btn-floating btn-tw mx-1">
-          <i class="fab fa-twitter" aria-hidden="true"></i>
-        </a>
-      </li>
-      <li class="list-inline-item">
-        <a class="btn-floating btn-gplus mx-1">
-          <i class="fab fa-google-plus" aria-hidden="true"></i>
-        </a>
-      </li>
-      <li class="list-inline-item">
-        <a class="btn-floating btn-li mx-1">
-          <i class="fab fa-linkedin"> </i>
-        </a>
-      </li>
-    </ul>
-    <!-- Social buttons -->
-	  </div>
-	            
+        </div>
         <!-- Grid column -->
 
         <hr class="clearfix w-100 d-md-none">
@@ -400,21 +357,46 @@ View new feedback</p>
 
     <hr>
 
+    <!-- Call to action -->
+    <ul class="list-unstyled list-inline text-center py-2">
+      <li class="list-inline-item">
+        <h5 class="mb-1">Find Your Financial Advisor</h5>
+      </li>
+      <li class="list-inline-item">
+         <button type="button" class="btn btn-primary btn-lg">Join Now</button>
+      </li>
+    </ul>
+    <!-- Call to action -->
+
+    <hr>
+    
     <!-- Copyright -->
     <div class="footer-copyright text-center py-3">© 2018 Copyright:
-      <a href="https://mdbootstrap.com/bootstrap-tutorial/"> ChicFin.com</a>
+      <a href="https://mdbootstrap.com/bootstrap-tutorial/"> SheInvest.com</a>
     </div>
     <!-- Copyright -->
 
 </div>
 <!-- Footer -->
-            </div>
-      
+        
+     <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
 
-	    <!-- Optional JavaScript -->
-	    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-	    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-	    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-	    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
-	</body>
+
+<script>
+// Get the modal
+var modal = document.getElementById('id01');
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
+</script>
+     
+    </body>
 </html>
