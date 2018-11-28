@@ -9,7 +9,11 @@
         grid-area: header;
         background-color:slategray;
       }
-      
+        //Join Now Button//
+        .form-control mr-sm-2 {
+        size: 50px;
+        }
+
       #lede {
         grid-area: lede;
       }
@@ -17,46 +21,42 @@
       #second {
         grid-area: second;
       }
-​
-      #second .card, #third .card, #fourth .card, #fifth .card {
-        border:0;
-      }
-.form-control mr-sm-2 {
-    size: 50px;
-}
 
-    #third {
-    grid-area: third;
+      #third {
+      grid-area: third;
       }
       
-    #fourth {
-    grid-area: fourth;
+      #fourth {
+      grid-area: fourth;
+      }
+
+      #fifth {
+      grid-area: fifth;
+      }
+        #second .card, #third .card, #fourth .card, #fifth .card {
+        border:0;
         }
-
-    #fifth {
-    grid-area: fifth;
-
-    }
-
-.list-inline-item {
-    font-size:170%;
-}
 
 
     #sidebar {
     grid-area: sidebar;
       }
 
-    #button {
-    background-color:##C9E3DB;
-    margin-bottom: 10px;
-    }
+        #button {
+        background-color:##C9E3DB;
+        margin-bottom: 10px;
+        }
 
       
   #footer {
         grid-area: footer;
         background-color:#00b2a9;
       }
+
+        .list-inline-item {
+        font-size:170%;
+        }
+
              
        
       @media only screen and (min-width: 1241px) {
