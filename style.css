@@ -208,7 +208,9 @@ body {
         grid-area: footer;
         background-color:slategray;
       }
-      
+      .list-inline-item {
+    font-size:170%;
+      }
       
       #logo {
         width:200px;
