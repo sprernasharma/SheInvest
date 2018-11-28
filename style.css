@@ -1,5 +1,9 @@
+body {
+  font-family: 'Lato', sans-serif;
+}
+   	
 
-   	 #grid {
+     #grid {
         display:grid;
         justify-content: center;
         grid-column-gap:10px;
@@ -9,6 +13,43 @@
       #header {
         grid-area: header;
       }
+
+      .buttonsforleads {
+        display: inline-block;
+      }
+
+      #overview1 mark {
+        background-color: #00b2a9;
+      }
+
+      #overview2 mark {
+        background-color: #Fa1e44;
+      }
+
+       #overview3 mark {
+        background-color: #ffbd4a;
+  
+      }
+
+       #overview4 mark {
+        background-color: #C9E3DB;
+      }
+
+      #overview1 mark, #overview2 mark, #overview3 mark, #overview4 mark {
+       border-left: 5px solid #000000;
+      padding: 30px;
+       margin:0 auto;
+      }
+
+      .btn {
+        background-color: #00b2a9;
+        color: #ffffff;
+      }
+
+      h5 a {
+        color: #00b2a9;
+      }
+
       
       #lede {
         grid-area: lede;
@@ -17,19 +58,31 @@
       #opencases {
         grid-area: opencases;
       }
-
-      #closedcases {
-        grid-area: closedcases;
+      #newleads {
+        grid-area: newleads;
       }
 
       #status {
-        grid-area: status;
+        grid-area: status;  
       }
 
       #button {
         grid-area: buttons;
       }
       
+      #clientstatus mark {
+        text-transform: uppercase;
+        font-size: 10px;
+        margin-top: -4rem; 
+        position: relative;
+      }
+
+      .image {
+        margin-right: 10px;
+        margin-top: -1px; 
+      }
+
+
       #first {
         grid-area: first;
       }
@@ -53,9 +106,33 @@
       #seventh {
         grid-area: seventh;
       }
+
+      a:hover {
+        color: #000000;
+      }
+
+      .seechat {
+        padding-left: 50rem;
+        margin-top: -4rem;
+        position: relative;
+      }
       
       #sidebar {
         grid-area: sidebar;
+        font-size: 10px;
+        text-transform: uppercase;
+      }
+
+      .btn {
+        font-size: 12px;
+      }
+
+      button:hover {
+    background-color: #C9E3DB;
+      }
+
+      #sidebar h5 {
+        font-size: 15px;
       }
 
       #sidebar .card {
@@ -82,30 +159,45 @@
 
       #overview1 {
         grid-area: overview1;
-        background-color: pink;
       }
 
       #overview2 {
         grid-area: overview2;
-        background-color:green;
       }
 
       #overview3 {
         grid-area: overview3;
-        background-color:blue;
       }
 
       #overview4 {
         grid-area: overview4;
-        background-color:red;
       }
 
+      .responsive {
+    width: 100%;
+    height: auto;
+}
+
+#opencases mark {
+  background-color: #C9E3DB;
+  text-transform: uppercase;
+  font-size: 30px;
+}
+
       #overview1, #overview2, #overview3, #overview4 {
-        margin-top: 30px;
+        margin-top: 7rem;
       }
 
       #banner {
         grid-area: banner;
+      }
+
+      #banner .card {
+        border: 0;
+      }
+
+      #banner img {
+        margin-top: 50px;
       }
 
       #notifications {
@@ -124,9 +216,6 @@
         width:200px;
       }
 
-      #clientstatus {
-        color: #00b2a9;
-      }
 
       .btn .btn-primary {
         color: #00b2a9;
@@ -147,14 +236,15 @@
           grid-template-areas: 
             "header   header   header   header   header   header header header"
             "lede lede lede lede lede . . buttons"
+            "sidebar sidebar newleads newleads newleads newleads newleads newleads"
             "sidebar sidebar opencases opencases opencases opencases opencases opencases"
-            "sidebar sidebar first first    second   second third third"
-            "sidebar sidebar first first    second   second third third"
+            "sidebar sidebar first first first first first first "
+            "sidebar sidebar second second second second second second "
+            "sidebar sidebar third third third third third third"
+            "sidebar sidebar fifth fifth   fifth fifth fifth fifth" 
+            "sidebar sidebar  sixth   sixth    sixth   sixth sixth   sixth"
+            "sidebar sidebar seventh seventh seventh seventh seventh seventh"
             "sidebar sidebar . . . . . moreclients1"
-            "sidebar sidebar closedcases closedcases closedcases closedcases closedcases closedcases"
-            "sidebar sidebar fifth fifth sixth sixth seventh seventh"
-            "sidebar sidebar fifth fifth sixth sixth seventh seventh"
-            "sidebar sidebar . . . . moreclients2 moreclients2"
             "overview1 overview1 overview2 overview2 overview3 overview3 overview4 overview4"
             "banner banner banner banner banner banner banner banner"
             "notifications notifications notifications notifications notifications notifications notifications notifications"
