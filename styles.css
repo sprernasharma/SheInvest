@@ -10,27 +10,19 @@
         background-color:slategray;
       }
       
-      #lede {
-        grid-area: lede;
-      }
-.card-text {
-    font-size: 160%;
-}
-       .list-inline-item {
-    font-size:170%;
-        }
+           //Join Now Button //
+           .form-control mr-sm-2 {
+           size: 50px;
+                }
 
-      #second {
-        grid-area: second;
+    #lede {
+     grid-area: lede;
       }
-​
-      #second .card, #third .card, #fourth .card, #fifth .card {
-        border:0;
-      }
-.form-control mr-sm-2 {
-    size: 50px;
-}
 
+    #second {
+    grid-area: second;
+      }
+ 
     #third {
     grid-area: third;
       }
@@ -44,25 +36,32 @@
 
     }
 
+        .card-text {
+        font-size: 160%;
+        }
+
+        #second .card, #third .card, #fourth .card, #fifth .card {
+        border:0;
+        }
 
     #sidebar {
     grid-area: sidebar;
       }
-    #button {
-    background-color:#00b2a9;
-    margin-bottom: 10px;
-    }
+
+        #button {
+        background-color:#C9E3DB;
+        margin-bottom: 10px;
+        }
 
       
   #footer {
         grid-area: footer;
-        background-color:slategray;
+        background-color:#00b2a9;
       }
              
-      
-a {
-    color: white;
-}
+        .list-inline-item {
+        font-size:170%;
+        }
       
       @media only screen and (min-width: 1241px) {
         #grid {
