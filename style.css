@@ -205,12 +205,16 @@ body {
       }
 
       #footer {
-        grid-area: footer;
-        background-color:slategray;
-      }
-      .list-inline-item {
-    font-size:170%;
-      }
+       grid-area: footer;
+       background-color:#C9E3DB;
+     }
+
+.list-inline-item {
+   font-size:170%;
+}
+
+button.btn{ background-color:#00b2a9;
+           border: #00b2a9; }
       
       #logo {
         width:200px;
