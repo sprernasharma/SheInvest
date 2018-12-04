@@ -1,15 +1,29 @@
-#grid {
+ #grid {
         display:grid;
         justify-content: center;
-        grid-column-gap:10px;
+        grid-gap:10px;
         grid-template-rows: auto;
       }
       
-      #header {
+ #header {
         grid-area: header;
+        background-color:slategray;
       }
-      
-      #lede {
+
+       button#Login{
+       margin: 0px;
+        }
+
+       button#started.btn.btn-info{
+       background-color:#00B289;
+       font-size: 30px;
+       margin:20px 0px;
+       padding:10px 20px;
+       border: none;
+       border-radius:8px;
+        }
+
+ #lede {
         grid-area: lede;
         background-color: #00b2a9;
       }
@@ -44,6 +58,10 @@
        #seventh {
         grid-area: seventh;
       }
+
+  .btn.btn-primary{ background-color:#00b2a9;
+           border: #00b2a9; }
+
     a {
     color: black;
     }
@@ -94,15 +112,7 @@
        #banner {
         grid-area: banner;
       }
-       #notifications {
-        grid-area: notifications;
-      }
-       #footer {
-        grid-area: footer;
-        background-color:slategray;
-      }
-      
-      
+            
       #logo {
         width:200px;
       }
@@ -118,8 +128,21 @@
        #card-text {
         background-color: green;
       }
-     .list-inline-item {
-    font-size:170%;
+    
+#footer {
+       grid-area: footer;
+       background-color:#C9E3DB;
+     }
+
+        .list-inline-item {
+        font-size:170%;
+        }
+
+        button.btn{ background-color:#00b2a9;
+           border: #00b2a9; }
+
+        a {
+        color: black;
         }
       
       @media only screen and (min-width: 1241px) {
