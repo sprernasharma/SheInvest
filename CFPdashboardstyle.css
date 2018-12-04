@@ -1,0 +1,481 @@
+body {
+  font-family: 'Lato', sans-serif;
+}
+   	
+
+     #grid {
+        display:grid;
+        justify-content: center;
+        grid-column-gap:10px;
+      }
+      
+      #header {
+        grid-area: header;
+      }
+
+      .list-inline-item {
+    font-size:170%;
+        }
+
+      .seechat a, .buttonsforleads a {
+        color: #ffffff !important;
+      }
+
+      .demo {
+        display: inline-flex;
+      }  
+
+      .demo .card-title {
+        position: relative;
+        padding-left: 2rem;
+      }
+
+      .demo .card-text {
+        position: relative;
+        margin-top: 2rem;
+        margin-left: -14rem;
+        display: inline-flex;
+      }
+
+      .demo .card-text p {
+        margin-left: 10px;
+      }
+        
+      
+
+      .newleadsactive {
+        z-index: 1;
+      }
+
+      .newleadsarchived {
+        z-index: 2;
+      }
+
+      .btn {
+        background-color: #00b2a9;
+        color: #ffffff;
+      }
+
+      h5 a {
+        color: #00b2a9;
+      }
+
+      
+      #lede {
+        grid-area: lede;
+      }
+
+      #lede .card {
+        border: none;
+      }
+
+      #opencases {
+        grid-area: opencases;
+      }
+
+      #newleads {
+        grid-area: newleads;
+      }
+
+      #status {
+        grid-area: status;  
+      }
+
+      #button {
+        grid-area: buttons;
+      }
+      
+      #clientstatus mark {
+        text-transform: uppercase;
+        font-size: 10px;
+        margin-top: -4rem; 
+        position: relative;
+      }
+
+      .image {
+        margin-right: 10px;
+        margin-top: -1px; 
+      }
+
+      hr.new4 {
+      border: 1px solid #C9E3DB;
+      }
+
+      #first {
+        grid-area: first;
+      }
+
+      #second {
+        grid-area: second;
+      }
+
+      #third {
+        grid-area: third;
+      }
+
+      #fifth {
+        grid-area: fifth;
+      }
+
+      #sixth {
+        grid-area: sixth;
+      }
+
+      #seventh {
+        grid-area: seventh;
+      }
+
+      a:hover {
+        color: #000000;
+      }
+      
+      #sidebar {
+        grid-area: sidebar;
+        font-size: 10px;
+        text-transform: uppercase;
+      }
+
+      #sidebar .card {
+        border: none;
+      }
+
+      #sidebar #notifications, #sidebar #paymentnotifications, #sidebar #reviewnotifications {
+        margin-top: 2rem;
+        margin-right: 1rem;
+      }
+
+      #notifications a, #paymentnotifications, #reviewnotifications  {
+        color: black;
+        font-size: 15px;
+        text-transform: initial;
+      }
+
+      .btn {
+        font-size: 12px;
+      }
+
+      button:hover {
+    background-color: #C9E3DB;
+      }
+
+      #sidebar h5 {
+        font-size: 15px;
+      }
+
+      #sidebar .card {
+      position: -webkit-sticky; /* Safari */
+      position: sticky;
+      top: 67px; /* margin from the top */
+      }
+
+      #notifications mark {
+        background-color: #ffbd4a;
+      }
+
+      #reviewnotifications mark {
+        background-color: #C9E3DB;
+      }
+
+      #moreclients1 {
+        grid-area: moreclients1;
+      }
+
+      #moreclients1 .card, #moreclients2 .card  {
+        border: 0;
+      }
+
+      #moreclients2 {
+        grid-area: moreclients2;
+      }
+
+      #overview1 {
+        grid-area: overview1;
+       border: 0;
+      }
+
+      #overview2 {
+        grid-area: overview2;
+       border: 0;
+      }
+
+      #overview3 {
+        grid-area: overview3;
+       border: 0;
+      }
+
+      #overview4 {
+        grid-area: overview4;
+       border: 0;
+      }
+
+      .responsive {
+    width: 100%;
+    height: auto;
+}
+
+      #opencases mark {
+        background-color: #C9E3DB;
+        text-transform: uppercase;
+        font-size: 30px;
+      }
+     
+      #banner {
+        grid-area: banner;
+      }
+
+      #dashboardoverview {
+        grid-area: dashboardoverview;
+      }
+
+      #banner .card {
+        border: 0;
+      }
+
+      #banner img {
+        margin-top: 50px;
+      }
+
+      #footer {
+       grid-area: footer;
+       background-color:#C9E3DB;
+     }
+
+     a {
+   color: black !important;
+   }
+
+    button.btn{ background-color:#00b2a9 !important;
+           border: #00b2a9; }
+      
+      #logo {
+        width:200px;
+      }
+
+      .btn .btn-primary {
+        color: #00b2a9;
+      }
+
+      #card-text {
+        background-color: green;
+      }
+
+      .seechat  {
+        padding-left: 50rem;
+        margin-top: -4rem;
+        position: relative;
+      }
+      
+      @media only screen and (min-width: 1241px) {
+        #grid {
+          grid-template-columns: repeat(8, 145px);
+          grid-row-gap: 10px;
+          grid-template-areas: 
+            "header   header   header   header   header   header header header"
+            "lede lede lede lede lede . . buttons"
+            "sidebar sidebar newleads newleads newleads newleads newleads newleads"
+            "sidebar sidebar opencases opencases opencases opencases opencases opencases"
+            "sidebar sidebar first first first first first first "
+            "sidebar sidebar second second second second second second "
+            "sidebar sidebar third third third third third third"
+            "sidebar sidebar fifth fifth   fifth fifth fifth fifth" 
+            "sidebar sidebar  sixth   sixth    sixth   sixth sixth   sixth"
+            "sidebar sidebar seventh seventh seventh seventh seventh seventh"
+            "sidebar sidebar . . . . . moreclients1"
+            "overview1 overview1 overview2 overview2 overview3 overview3 overview4 overview4"
+            "banner banner banner banner banner banner banner banner"
+            "footer   footer   footer   footer   footer   footer   footer footer"
+        }
+
+        #dashboardoverview {
+          display: none;
+        }
+
+        .buttonsforleads {
+        display: inline-flex;
+      }
+
+
+       #overview1, #overview2, #overview3, #overview4 {
+        margin-top: 7rem;
+      }
+
+
+      #overview1 .card, #overview2 .card, #overview3 .card, #overview4 .card {
+       border-left: 5px solid #000000;
+      padding: 30px;
+       margin:0 auto;
+      }
+
+      #overview1 .card, #overview2 .card, #overview3 .card, #overview4 .card  {
+        font-size: 20px;
+      }
+
+      .Accept {
+        position: absolute;
+        padding-left: 40rem;
+        margin-top: -4rem;
+      }
+
+      .Reject {
+        margin-left: 46rem;
+        position: absolute;
+        margin-top: -4rem;
+      }
+      }
+      
+      @media only screen and (max-width: 1240px) {
+        #grid {
+          grid-template-columns: repeat(6, 145px);
+          grid-row-gap: 20px;
+          grid-template-areas: 
+            "header   header   header   header   header   header"
+            "lede lede lede lede lede buttons"
+            "sidebar sidebar newleads newleads newleads newleads"
+            "sidebar sidebar opencases opencases opencases opencases"
+            "sidebar sidebar first first second   second"
+            "sidebar sidebar fifth  fifth third   third"
+            "sidebar sidebar sixth   sixth   seventh seventh"
+            "sidebar sidebar . . . moreclients1"
+            "sidebar sidebar overview1 overview2 overview3 overview4"
+            "banner banner banner banner banner banner"
+            "footer   footer   footer   footer   footer footer"
+        }
+
+      .seechat  {
+          display: none;
+      }
+
+      #dashboardoverview {
+          display: none;
+        }
+
+      #overview1, #overview2, #overview3, #overview4, #sidebar {
+        margin-top: 4rem;
+      }
+
+
+      #overview1 mark, #overview2 mark, #overview3 mark, #overview4 mark {
+        border-left: 5px solid #000000;
+        padding: 10px;
+        margin:0 auto;
+      }
+
+      #overview1 .card, #overview2 .card, #overview3 .card, #overview4 .card  {
+        font-size: 15px;
+      }
+
+        .buttonsforleads {
+        display: inline-flex;
+      }
+
+      .Accept {
+        position: absolute;
+        padding-left: 24rem;
+        margin-top: -4rem;
+      }
+
+      .Reject {
+        margin-left: 30rem;
+        position: absolute;
+        margin-top: -4rem;
+      }
+      }
+      
+      @media only screen and (max-width: 975px) {
+        #grid {
+          grid-template-columns: repeat(4, 23%);
+          grid-column-gap:0px;
+          grid-row-gap: 10px;
+          grid-template-areas: 
+            "header   header   header   header"
+            "lede    lede    lede    buttons"
+            "newleads newleads newleads newleads"
+            "sidebar sidebar sidebar sidebar"
+            "opencases opencases opencases opencases"
+            "first first second second"
+            "third    third fifth fifth "
+            "sixth sixth seventh seventh"
+            ".  . moreclients1 moreclients1"
+            "overview1 overview2 overview3 overview4"
+            "banner banner banner banner"
+            "footer   footer   footer   footer"
+        }
+
+          .buttonsforleads {
+        display: inline-flex;
+      }
+
+        .Accept {
+        position: absolute;
+        padding-left: 20rem;
+        margin-top: -4rem;
+      }
+
+      .Reject {
+        margin-left: 26rem;
+        position: absolute;
+        margin-top: -4rem;
+      }
+
+      .seechat  {
+          display: none;
+      }
+
+      #dashboardoverview {
+          display: none;
+        }
+      }
+      
+      @media only screen and (max-width: 655px) {
+        #grid {
+          grid-template-columns: repeat(2, 50%); 
+          grid-row-gap: 5px;
+          grid-template-areas: 
+            "header header"
+            "lede lede"
+            "buttons buttons"
+            "newleads newleads"
+            "opencases opencases"
+            "first first"
+            "second second"
+            "third third"
+            "fifth fifth"
+            "sixth sixth"
+            "seventh seventh"
+            "moreclients1 moreclients1"
+            "sidebar sidebar"
+            "dashboardoverview dashboardoverview"
+            "overview1 overview1"
+            "overview2 overview2"
+            "overview3 overview3"
+            "overview4 overview4"
+            "banner banner"
+            "footer footer"
+        }
+
+          .Accept {
+        position: absolute;
+        padding-left: 10rem;
+        margin-top: -4rem;
+      }
+
+      .Reject {
+        margin-left: 16rem;
+        position: absolute;
+        margin-top: -4rem;
+      }
+
+        #opencases, #dashboardoverview {
+          margin-top: 60px;
+        }
+
+        #sidebar, #overview1, #overview2, #overview3, #overview4 {
+          margin-top: 10px;
+        }
+
+        #sidebar .card #notifications, #sidebar .card #paymentnotifications, #sidebar .card #reviewnotifications {
+          margin-top: 10px;
+        }
+
+      
+      }

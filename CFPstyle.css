@@ -5,16 +5,21 @@
       #grid {
         display:grid;
         justify-content: center;
-        grid-column-gap:10px;
         grid-template-rows: auto;
       }
+
       .icons .card img {
-        height:40px;
-        width:40px;
+        height:80px;
+        width:80px;
         text-align:center;
       }
+
       #header {
         grid-area: header;
+      }
+
+      .list-inline-item {
+        font-size:170%;
       }
 
       #profile {
@@ -52,7 +57,7 @@
       }
 
       mark {
-        background-color: #c6fffc;
+        background-color: #C9E3DB;
   font-style: italic;
   text-align: center;
   border-left: 5px solid #00b2a9;
@@ -63,12 +68,12 @@
       }
 
       #icon2 h5, #icon3 h5, #icon1 h5 {
-        text-align: : center;
+        font-size: 15px;
+        margin-top: 20px;
       }
 
       .btn {
         background-color: #00b2a9;
-        color: #ffffff;
       }
 
       #connectbutton2 {
@@ -82,6 +87,7 @@
       #icon1 {
       	grid-area: icon1;
         margin-top: 30px;
+        margin-bottom: 130px;
       }
 
        #icons {
@@ -101,6 +107,12 @@
 
       #icon1 .card, #icon2 .card, #icon3 .card, #morelikethis .card {
       	border: 0;
+        text-align: center;
+      }
+
+      #icon1 .card-img-top, #icon2 .card-img-top, #icon3 .card-img-top {
+        border: 0;
+        align-content: center;
       }
 
       #morelikethis {
@@ -142,13 +154,33 @@
       }
 
       #clientstatus {
-        color: #ffffff;
+        font-size: 13px;
+      }
+
+      #morelikethis {
+        text-transform: uppercase;
+        color: #00b2a9;
+      }
+
+      .clientbutton a {
+        color: black;
+      }
+
+      #morelikethis h1 a {
+        color: #00b2a9 !important;
       }
 
       #footer {
-        grid-area: footer;
-        background-color:slategray;
-      }
+       grid-area: footer;
+       background-color:#C9E3DB;
+     }
+
+    a {
+   color: black !important;
+   }
+
+    button.btn{ background-color:#00b2a9 !important;
+           border: #00b2a9; }
         
       .list-inline-item {
       font-size:170%;
@@ -157,15 +189,14 @@
       @media only screen and (min-width: 1241px) {
         #grid {
           grid-template-columns: repeat(8, 145px);
-          grid-row-gap: 10px;
           grid-template-areas: 
             "header   header   header   header   header   header header header"
-            ". profile profile  profiletext1 profiletext1 profiletext1 profiletext1 ."
-            ". profile profile  profiletext2 profiletext2 profiletext2 profiletext2 ."
-            ". profile profile  profiletext3 profiletext3 profiletext3 profiletext3 ."
+            ". profile profile profiletext1 profiletext1 profiletext1 profiletext1 ."
+            ". profile profile profiletext2 profiletext2 profiletext2 profiletext2 ."
+            ". profile profile profiletext3 profiletext3 profiletext3 profiletext3 ."
             ". icon1 icon1 icon2 icon2 icon3 icon3 ."
             ". profiletext4 profiletext4 profiletext4 profiletext4 profiletext4 profiletext4 ."
-            ". morelikethis morelikethis morelikethis morelikethis morelikethis morelikethis morelikethis"
+            "morelikethis morelikethis morelikethis morelikethis morelikethis morelikethis morelikethis morelikethis"
             ". first first second second third third ."
             "footer   footer   footer   footer   footer   footer   footer footer"
         }
@@ -174,29 +205,67 @@
       @media only screen and (max-width: 1240px) {
         #grid {
           grid-template-columns: repeat(6, 145px);
-          grid-row-gap: 20px;
           grid-template-areas: 
-            "header   header   header   header   header   header"
-            "lede lede lede lede lede buttons"
-            "sidebar sidebar first   second   third    ."
-            "sidebar sidebar . . . moreclients"
-            "sidebar sidebar overview1 overview2 overview3 overview4"
-            "footer   footer   footer   footer   footer footer"
+            "header header header header header header"
+            "profile profile profiletext1 profiletext1 profiletext1 profiletext1"
+            "profile profile profiletext2 profiletext2 profiletext2 profiletext2"
+            "profile profile profiletext3 profiletext3 profiletext3 profiletext3"
+            ". . . icon1 icon2 icon3"
+            "profiletext4 profiletext4 profiletext4 profiletext4 profiletext4 profiletext4"
+            "morelikethis morelikethis morelikethis morelikethis morelikethis morelikethis"
+            "first first second second third third"
+            "footer footer footer footer footer footer"
         }
       }
       
       @media only screen and (max-width: 975px) {
         #grid {
           grid-template-columns: repeat(4, 25%);
-          grid-row-gap: 10px;
           grid-template-areas: 
-            "header   header   header   header"
-            "lede    lede    lede    buttons"
-            "first first "
-            "second   second   third    third"
-            "sidebar   sidebar moreclients moreclients"
-            "overview1 overview2 overview3 overview4"
-            "footer   footer   footer   footer"
+          "header header header header"
+          "profile profile profiletext1 profiletext1"
+          "profile profile profiletext2 profiletext2"
+          "profile profile profiletext3 profiletext3"
+          ". icon1 icon2 icon3"
+          "profiletext4 profiletext4 profiletext4 profiletext4"
+          "morelikethis morelikethis morelikethis morelikethis"
+          ". second first ."
+          ". third third ."
+          "footer footer footer footer"
+        }
+
+        #profile img {
+          width: 400px;
+          height: 400px;
+        }
+
+        #profile .card {
+          border: 0;
+          margin-left: 20px;
+          margin-bottom: 10px;
+        }
+
+        #profile button {
+          width: 400px;
+        }
+
+        #first img {
+          margin-left: 10px;
+          margin-right: 10px;
+        }
+
+        #first .card-img-top, #second .card-img-top{
+          width: 220px;
+          height: 200px;
+        }
+
+        #first .card, #second .card {
+          border: 0;  
+          text-align: center;
+        }
+
+        #third {
+          display: none;
         }
       }
       
@@ -204,19 +273,44 @@
         #grid {
           grid-template-columns: repeat(2, 50%); 
           grid-row-gap: 10px;
+          grid-template-rows: (14,auto);
           grid-template-areas: 
-            "header   header"
-            "lede    lede"
-            "buttons buttons"
+            "header header"
+            "profile profile"
+            "profiletext1 profiletext1"
+            "profiletext2 profiletext2"
+            "profiletext3 profiletext3"
+            "icon1 icon1"
+            "icon2 icon2"
+            "icon3 icon3"
+            "profiletext4 profiletext4"
+           "morelikethis morelikethis"
             "first first"
-            "second   second"
-            "third    third"
-            "moreclients moreclients"
-            "sidebar   sidebar"
-            "overview1 overview1"
-            "overview2 overview2"
-            "overview3 overview3"
-            "overview4 overview4"
-            "footer   footer"
+            "second second"
+            "third third"
+            "footer footer"
         }
+
+        #icon3 {
+          margin-top: 150px;
+        }
+
+        #profiletext4 {
+          margin-top: 200px !important;
+        }
+
+        #profiletext4 p, #profiletext4 h5 {
+          width: 200px;
+        }
+
+        #profiletext4 mark {
+          width: 300px;
+        }
+
+        #first img, #second img {
+          margin-left: auto;
+          margin-right: auto;
+        }
+
+
       }
