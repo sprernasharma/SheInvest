@@ -1,0 +1,176 @@
+
+      #grid {
+        display:grid;
+        justify-content: center;
+        /*grid-gap:10px;*/
+      }
+      
+      #header {
+        grid-area: header;
+        background-color:brown;
+      }
+      #one {
+        grid-area: one;
+      }
+
+      
+      #three {
+        grid-area: three;
+        background-color:mediumaquamarine;
+      }
+      
+      #four {
+        grid-area: four;
+        background-color:pink;
+      }
+      
+      #five {
+        grid-area: five;
+        background-color:deeppink;
+      }
+      
+      #six {
+        grid-area: six;
+        background-color:orangered;
+      }
+      
+      #seven {
+        grid-area: seven;
+        background-color:mediumorchid;
+      }
+      
+      #eight {
+        grid-area: eight;
+        background-color:darkcyan;
+      }
+      #nine {
+        grid-area: nine;
+        background-color:green;
+      }
+      
+      #ten {
+        grid-area: ten;
+        background-color:black;
+      }
+      #ten .card, #eleven .card
+      {
+        border: 0;
+        text-align: center;
+      }
+      #eleven {
+        grid-area: eleven;
+        background-color:red;
+      }
+      
+      #footer {
+        grid-area: footer;
+        background-color:darkcyan;
+      }
+      
+      #logo {
+        width:200px;
+      }
+      
+
+      .list-inline-item {
+    font-size:170%;
+      }
+
+      @media only screen and (min-width: 1241px) {
+        #grid {
+          grid-template-columns: repeat(6, 15%);
+          grid-template-rows: repeat(7, auto);
+          grid-template-areas: 
+            "header   header   header   header   header   header"
+            "one one one one one one"
+            "three three four four five five"
+            "six six seven seven eight eight"
+            "nine nine nine nine nine nine"
+            "ten ten ten eleven eleven eleven"
+            "footer footer footer footer footer footer"
+        }
+
+      #one {
+        padding: 60px 50% 60px 60px;
+        background-image: url('womanstock.jpeg');
+        background-repeat: no-repeat;
+        background-size:100%;
+
+      }
+      }
+      
+
+@media only screen and (max-width: 1240px) {
+        #grid {
+          grid-template-columns: repeat(6, 15%);
+          grid-template-rows: repeat(7, auto);
+          grid-template-areas: 
+            "header   header   header   header   header   header"
+            "one one one one one one"
+            "three three four four five five"
+            "six six seven seven eight eight"
+            "nine nine nine nine nine nine"
+            "ten ten ten eleven eleven eleven"
+            "footer footer footer footer footer footer"
+        }
+        #one {
+        padding: 60px 50% 60px 60px;
+        background-image: url('girllookcomputer.jpg');
+        
+        text-align: center;
+        width: 100%;
+        left: 0;
+      }
+      }
+      
+      @media only screen and (max-width: 975px) {
+        #grid {
+          grid-template-columns: repeat(4, 22.5%);
+          grid-template-rows: repeat(8, auto);
+          grid-template-areas: 
+            "header   header   header   header"
+            "one one one one"
+            "three three four four"
+            "five five six six"
+            "seven seven eight eight"
+            "nine nine nine nine"
+            "ten ten eleven eleven"
+            "footer footer footer footer"
+        }
+
+        #one {
+        padding: 40px;
+      }
+      }
+      
+      @media only screen and (max-width: 655px) {
+        #grid {
+          grid-template-columns: repeat(2, 45%); 
+          grid-template-rows: repeat(12, auto);
+          grid-template-areas: 
+            "header   header"
+            "one one"
+            "three three"
+            "four four"
+            "five five"
+            "six six"
+            "seven seven"
+            "eight eight"
+            "nine nine"
+            "ten ten"
+            "eleven eleven"
+            "footer footer"
+        }
+
+        h1{
+          font-size:2rem;
+          padding:10px;
+        }
+
+        #one {
+        padding: 40px;
+        font-size: 16px;
+        text-align: center;
+      }
+
+      }
