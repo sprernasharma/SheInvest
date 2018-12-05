@@ -1,0 +1,67 @@
+
+.card-title {
+    text-align: center;
+    color: #00b2a9;
+    padding-top: 50px;
+}
+
+ 
+
+#start {
+     background-color:#00b2a9;
+    border: #00b2a9;
+}
+
+
+
+ #footer {
+     grid-area: footer;
+    background-color:#C9E3DB;
+      }
+
+.list-inline-item {
+    font-size:170%;
+        }
+
+#footer a { color: black;
+}
+
+@media only screen and (min-width: 1241px) { .row {
+    padding-bottom: 270px; }
+}
+
+@media only screen and (max-width: 1240px) { .row {
+    padding-bottom: 200px;
+    }}
+
+@media only screen and (max-width: 975px)  { .row {
+    padding-bottom: 150px;
+    }}
+
+@media only screen and (max-width: 655px) { .row {
+    padding-bottom: 100px;
+    }}
+
+@media only screen and (min-width: 1241px) { .text {
+    padding-bottom: 400px; }
+}
+
+@media only screen and (max-width: 1240px) { .text {
+    padding-bottom: 300px;
+    }}
+
+@media only screen and (max-width: 975px)  { .text {
+    padding-bottom: 150px;
+    }}
+
+@media only screen and (max-width: 655px) { .text {
+    padding-bottom: 100px;
+    }
+    #select { padding-bottom: 10px;}
+
+}
+
+.text {
+    text-align: center;
+
+}
