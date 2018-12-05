@@ -1,17 +1,47 @@
 body {
   font-family: 'Lato', sans-serif;
 }
-   	
 
-     #grid {
-        display:grid;
-        justify-content: center;
-        grid-column-gap:10px;
-      }
-      
-      #header {
-        grid-area: header;
-      }
+#grid {
+       display:grid;
+       justify-content: center;
+       grid-gap:10px;
+       grid-template-rows: auto;
+     }
+
+#header {
+       grid-area: header;
+       background-color:slategray;
+     }
+
+
+    #join {
+   background-color:#00B289;
+   color: white;
+   padding: 14px 20px;
+   margin: 8px 10px;
+   border:none;
+   border-radius: 8px;
+   cursor: pointer;
+
+       }
+
+     #join a { color: white;}
+
+    #login{
+    background-color:#00B289;
+    color:  white;
+       }
+
+    #title {
+   text-align: center;
+   color: #00b2a9;
+   }
+
+#header a {
+  color: #fff;
+}
+
 
       .list-inline-item {
     font-size:170%;
@@ -41,7 +71,9 @@ body {
         margin-left: 10px;
       }
         
-      
+      .newleadsactive, .newleadsarchived {
+        background-color:#fff;
+      }
 
       .newleadsactive {
         z-index: 1;
@@ -49,6 +81,7 @@ body {
 
       .newleadsarchived {
         z-index: 2;
+        
       }
 
       .btn {
@@ -71,10 +104,13 @@ body {
 
       #opencases {
         grid-area: opencases;
+        margin-top: 20px;
       }
 
       #newleads {
         grid-area: newleads;
+        position:relative;
+        margin-top: 20px;
       }
 
       #status {
@@ -158,8 +194,42 @@ body {
     background-color: #C9E3DB;
       }
 
+      #newleads .newleadstitle {
+        background-color: #ffbd4a;
+        text-transform: uppercase;
+        padding-top: 10px;
+        padding-left: 10px;
+      }
+
+       #newleads .newleadsactive {
+        padding-top: 10px;
+        padding-left: 10px;
+        font-size: 14px;
+      }
+
       #sidebar h5 {
         font-size: 15px;
+      }
+
+      #congrats_lead, #ohno_lead { 
+        display:none;
+      }
+
+      .Newlead1 #congrats_lead { 
+        background-color: #C9E3DB;
+        font-size: 15px;
+        font-weight: bold;
+        padding-top: 20px;
+        padding-bottom: 20px;
+      }
+
+      .Newlead1 #ohno_lead { 
+        background-color: grey;
+        font-size: 15px;
+        font-weight: bold;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        color: #fff;
       }
 
       #sidebar .card {
@@ -223,10 +293,6 @@ body {
         grid-area: banner;
       }
 
-      #dashboardoverview {
-        grid-area: dashboardoverview;
-      }
-
       #banner .card {
         border: 0;
       }
@@ -241,7 +307,7 @@ body {
      }
 
      a {
-   color: black !important;
+   color: black;
    }
 
     button.btn{ background-color:#00b2a9 !important;
@@ -286,10 +352,6 @@ body {
             "footer   footer   footer   footer   footer   footer   footer footer"
         }
 
-        #dashboardoverview {
-          display: none;
-        }
-
         .buttonsforleads {
         display: inline-flex;
       }
@@ -313,13 +375,13 @@ body {
       .Accept {
         position: absolute;
         padding-left: 40rem;
-        margin-top: -4rem;
+        margin-top: 1rem;
       }
 
       .Reject {
         margin-left: 46rem;
         position: absolute;
-        margin-top: -4rem;
+        margin-top: 1rem;
       }
       }
       
@@ -345,11 +407,7 @@ body {
           display: none;
       }
 
-      #dashboardoverview {
-          display: none;
-        }
-
-      #overview1, #overview2, #overview3, #overview4, #sidebar {
+      #overview1, #overview2, #overview3, #overview4 {
         margin-top: 4rem;
       }
 
@@ -371,13 +429,13 @@ body {
       .Accept {
         position: absolute;
         padding-left: 24rem;
-        margin-top: -4rem;
+        margin-top: 0.8rem;
       }
 
       .Reject {
         margin-left: 30rem;
         position: absolute;
-        margin-top: -4rem;
+        margin-top: 0.8rem;
       }
       }
       
@@ -401,34 +459,35 @@ body {
             "footer   footer   footer   footer"
         }
 
+        #sidebar {
+          margin-top: 0px;
+        }
+
           .buttonsforleads {
         display: inline-flex;
       }
 
         .Accept {
         position: absolute;
-        padding-left: 20rem;
-        margin-top: -4rem;
+        padding-left: 38rem;
+        margin-top: 0.6rem;
       }
 
       .Reject {
-        margin-left: 26rem;
+        margin-left: 44rem;
         position: absolute;
-        margin-top: -4rem;
+        margin-top: 0.6rem;
       }
 
       .seechat  {
           display: none;
       }
-
-      #dashboardoverview {
-          display: none;
-        }
       }
       
       @media only screen and (max-width: 655px) {
         #grid {
           grid-template-columns: repeat(2, 50%); 
+          grid-column-gap: 0px;
           grid-row-gap: 5px;
           grid-template-areas: 
             "header header"
@@ -444,7 +503,6 @@ body {
             "seventh seventh"
             "moreclients1 moreclients1"
             "sidebar sidebar"
-            "dashboardoverview dashboardoverview"
             "overview1 overview1"
             "overview2 overview2"
             "overview3 overview3"
@@ -455,27 +513,34 @@ body {
 
           .Accept {
         position: absolute;
-        padding-left: 10rem;
-        margin-top: -4rem;
+        padding-left: 15rem;
+        margin-top: -1rem;
       }
 
       .Reject {
-        margin-left: 16rem;
+        margin-left: 20rem;
         position: absolute;
-        margin-top: -4rem;
+        margin-top: -1rem;
       }
 
-        #opencases, #dashboardoverview {
+        #opencases{
           margin-top: 60px;
         }
 
-        #sidebar, #overview1, #overview2, #overview3, #overview4 {
+        #sidebar {
           margin-top: 10px;
+        }
+
+        #overview1, #overview2, #overview3, #overview4 {
+          display: none;
         }
 
         #sidebar .card #notifications, #sidebar .card #paymentnotifications, #sidebar .card #reviewnotifications {
           margin-top: 10px;
         }
 
+        #newleads {
+        margin-top: 20px;
+      }
       
       }
