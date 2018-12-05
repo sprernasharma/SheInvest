@@ -30,7 +30,7 @@
         text-decoration: none;
 
 }
-      button#Login{
+      button#Logout{
         margin: 0px;
       }
 
@@ -188,7 +188,7 @@
      }
 
     a {
-   color: black !important;
+   color: black;
    }
 
     button.btn{ background-color:#00b2a9 !important;
@@ -200,7 +200,7 @@
 
       @media only screen and (min-width: 1241px) {
         #grid {
-          grid-template-columns: repeat(8, 145px);
+          grid-template-columns: repeat(8, 12.5%);
           grid-template-areas: 
             "header   header   header   header   header   header header header"
             ". profile profile profiletext1 profiletext1 profiletext1 profiletext1 ."
@@ -216,8 +216,8 @@
       
       @media only screen and (max-width: 1240px) {
         #grid {
-          grid-template-columns: repeat(6, 145px);
-          grid-template-areas: 
+          grid-template-columns: repeat(6, 1/6);
+            grid-template-areas: 
             "header header header header header header"
             "profile profile profiletext1 profiletext1 profiletext1 profiletext1"
             "profile profile profiletext2 profiletext2 profiletext2 profiletext2"
