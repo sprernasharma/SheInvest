@@ -22,15 +22,6 @@
        margin: 0px;
         }
 
-       button#started.btn.btn-info{
-       background-color:#00B289;
-       font-size: 30px;
-       margin:20px 0px;
-       padding:10px 20px;
-       border: none;
-       border-radius:8px;
-        } 
-
 #lede {
      grid-area: lede;
       }
