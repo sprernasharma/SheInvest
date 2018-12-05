@@ -11,17 +11,35 @@
       }
 
 
-        #joinnowbutton  {
-       background-color:#C9E3DB;
-       margin: 0px 20px;
-       border: none;
-       text-decoration: none;
+     #join {
+    background-color:#00B289;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 10px;
+    border:none;
+    border-radius: 8px;
+    cursor: pointer;
+    
+        }
 
-        }
+      #join a { color: white;}
      
-       button#Login{
-       margin: 0px;
+     #login{
+     background-color:#00B289;
+     color:  white;
         }
+
+     #title {
+    text-align: center;
+    color: #00b2a9;
+    }
+
+.row {
+    margin-left: 100px;
+    margin-right: 100px;
+    
+      }
+
 
 
   #lede {
@@ -74,7 +92,7 @@
         button.btn{ background-color:#00b2a9;
            border: #00b2a9; }
 
-        a {
+       #footer a {
         color: black;
         }
              
