@@ -5,23 +5,26 @@
         grid-template-rows: auto;
       }
       
+
  #header {
         grid-area: header;
         background-color:slategray;
       }
 
-       button#Login{
-       margin: 0px;
-        }
 
- #lede {
-        grid-area: lede;
-        background-color: #00b2a9;
-      }
-       #opencases {
-        grid-area: opencases;
-      }
-       #closedcases {
+#opencases {
+    grid-area: opencases;
+}
+#dashboardcard {
+    background-color: #ffbd4a;
+}
+
+#statcard {
+    background-color: #ffbd4a;
+}
+
+
+    #closedcases {
         grid-area: closedcases;
       }
        #status {
@@ -53,73 +56,29 @@
   .btn.btn-primary{ background-color:#00b2a9;
            border: #00b2a9; }
 
-    a {
-    color: black;
-    }
-      
-      #sidebar {
+  
+#sidebar {
         grid-area: sidebar;
         background-color: #C9E3DB;
       }
-       #sidebar . card {
-      position: -webkit-sticky; /* Safari */
-      position: sticky;
-      top: 67px; /* margin from the top */
-    color: #C9E3DB;
-      }
-
     
-       #moreclients1 {
-        grid-area: moreclients1;
+    #sidebar a { color: black;}
+
+    #victoria {
+    max-width: 100%;
+}
+    
+#moreclients {
+        grid-area: moreclients;
       }
-       #moreclients1 .card {
-        border: 0;
-      }
-       #moreclients2 {
-        grid-area: moreclients2;
-      }
-       #moreclients2 .card {
-        border: 0;
-      }
-       #overview1 {
-        grid-area: overview1;
-        background-color: pink;
-      }
-       #overview2 {
-        grid-area: overview2;
-        background-color:green;
-      }
-       #overview3 {
-        grid-area: overview3;
-        background-color:blue;
-      }
-       #overview4 {
-        grid-area: overview4;
-        background-color:red;
-      }
-       #overview1, #overview2, #overview3, #overview4 {
-        margin-top: 30px;
-      }
-       #banner {
-        grid-area: banner;
-      }
-            
-      #logo {
-        width:200px;
-      }
-       #clientstatus {
-        color: #00b2a9;
-      }
-       .btn .btn-primary {
-        color: #00b2a9;
-      }
+     
        .moreclients .btn .btn-primary {
         color: #00b2a9;
       }
-       #card-text {
-        background-color: green;
-      }
+     
     
+
+
 #footer {
        grid-area: footer;
        background-color:#C9E3DB;
@@ -132,78 +91,88 @@
         button.btn{ background-color:#00b2a9;
            border: #00b2a9; }
 
-        a {
+        #footer a {
         color: black;
         }
       
+
       @media only screen and (min-width: 1241px) {
         #grid {
           grid-template-columns: repeat(8, 145px);
-          grid-row-gap: 10px;
           grid-template-areas: 
             "header   header   header   header   header   header header header"
-            "lede lede lede lede lede . . buttons"
-            "sidebar sidebar opencases opencases opencases opencases opencases opencases"
+            "sidebar sidebar opencases  opencases   opencases   opencases   opencases   opencases "
             "sidebar sidebar first first    second   second third third"
             "sidebar sidebar first first    second   second third third"
-            "sidebar sidebar . . . . . moreclients1"
+            "sidebar sidebar . . . . moreclients moreclients"
             "sidebar sidebar closedcases closedcases closedcases closedcases closedcases closedcases"
             "sidebar sidebar fifth fifth sixth sixth seventh seventh"
             "sidebar sidebar fifth fifth sixth sixth seventh seventh"
-            "sidebar sidebar . . . . moreclients2 moreclients2"
-            "overview1 overview1 overview2 overview2 overview3 overview3 overview4 overview4"
-            "banner banner banner banner banner banner banner banner"
-            "notifications notifications notifications notifications notifications notifications notifications notifications"
             "footer   footer   footer   footer   footer   footer   footer footer"
         }
+         
+      
       }
       
-      @media only screen and (max-width: 1240px) {
+        @media only screen and (max-width: 1240px) {
         #grid {
           grid-template-columns: repeat(6, 145px);
-          grid-row-gap: 20px;
+             grid-row-gap: 10px;
           grid-template-areas: 
             "header   header   header   header   header   header"
-            "lede lede lede lede lede buttons"
-            "sidebar sidebar first   second   third    ."
-            "sidebar sidebar . . . moreclients"
-            "sidebar sidebar overview1 overview2 overview3 overview4"
-            "footer   footer   footer   footer   footer footer"
+            "sidebar sidebar opencases  opencases   opencases   opencases"
+            "sidebar sidebar first first    second   second"
+            "sidebar sidebar first first    second   second"
+            "sidebar sidebar third  third   third   third"
+            "sidebar sidebar . . moreclients moreclients"
+            "sidebar sidebar closedcases closedcases closedcases closedcases"
+            "sidebar sidebar fifth fifth sixth seventh"
+            "sidebar sidebar fifth fifth sixth seventh"
+            "footer   footer   footer   footer   footer   footer"
         }
+         
       }
+      
+      
       
       @media only screen and (max-width: 975px) {
         #grid {
           grid-template-columns: repeat(4, 25%);
-          grid-row-gap: 10px;
+             grid-row-gap: 10px;
           grid-template-areas: 
-            "header   header   header   header"
-            "lede    lede    lede    buttons"
-            "first first "
-            "second   second   third    third"
-            "sidebar   sidebar moreclients moreclients"
-            "overview1 overview2 overview3 overview4"
-            "footer   footer   footer   footer"
+       
+           "header header header header"
+            "sidebar sidebar sidebar sidebar"
+            "opencases opencases opencases opencases"
+            "first first first first"
+            "second  second second second"
+            "third third third third"
+            "closedcases closedcases closedcases closedcases"
+            "fifth fifth fifth fifth"
+            "sixth sixth sixth sixth"
+            "seventh seventh seventh seventh"
+            "moreclients moreclients moreclients moreclients"
+            "footer footer footer footer"
         }
+         
       }
       
       @media only screen and (max-width: 655px) {
         #grid {
           grid-template-columns: repeat(2, 50%); 
-          grid-row-gap: 10px;
+        grid-row-gap: 10px;
           grid-template-areas: 
-            "header   header"
-            "lede    lede"
-            "buttons buttons"
+            "header header"
+            "sidebar  sidebar"
+            "opencases opencases"
             "first first"
-            "second   second"
-            "third    third"
+            "second second"
+            "third  third"
+            "closedcases closedcases"
+            "fifth fifth"
+            "sixth sixth"
+            "seventh seventh"
             "moreclients moreclients"
-            "sidebar   sidebar"
-            "overview1 overview1"
-            "overview2 overview2"
-            "overview3 overview3"
-            "overview4 overview4"
-            "footer   footer"
+            "footer footer"
         }
       }
