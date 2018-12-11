@@ -1,0 +1,178 @@
+ #grid {
+        display:grid;
+        justify-content: center;
+        grid-gap:10px;
+        grid-template-rows: auto;
+      }
+      
+
+ #header {
+        grid-area: header;
+        background-color:slategray;
+      }
+
+
+#opencases {
+    grid-area: opencases;
+}
+#dashboardcard {
+    background-color: #ffbd4a;
+}
+
+#statcard {
+    background-color: #ffbd4a;
+}
+
+
+    #closedcases {
+        grid-area: closedcases;
+      }
+       #status {
+        grid-area: status;
+      }
+       #button {
+        grid-area: buttons;
+      }
+      
+      #first {
+        grid-area: first;
+      }
+       #second {
+        grid-area: second;
+      }
+       #third {
+        grid-area: third;
+      }
+       #fifth {
+        grid-area: fifth;
+      }
+       #sixth {
+        grid-area: sixth;
+      }
+       #seventh {
+        grid-area: seventh;
+      }
+
+  .btn.btn-primary{ background-color:#00b2a9;
+           border: #00b2a9; }
+
+  
+#sidebar {
+        grid-area: sidebar;
+        background-color: #C9E3DB;
+      }
+    
+    #sidebar a { color: black;}
+
+    #victoria {
+    max-width: 100%;
+}
+    
+#moreclients {
+        grid-area: moreclients;
+      }
+     
+       .moreclients .btn .btn-primary {
+        color: #00b2a9;
+      }
+     
+    
+
+
+#footer {
+       grid-area: footer;
+       background-color:#C9E3DB;
+     }
+
+        .list-inline-item {
+        font-size:170%;
+        }
+
+        button.btn{ background-color:#00b2a9;
+           border: #00b2a9; }
+
+        #footer a {
+        color: black;
+        }
+      
+
+      @media only screen and (min-width: 1241px) {
+        #grid {
+          grid-template-columns: repeat(8, 145px);
+          grid-template-areas: 
+            "header   header   header   header   header   header header header"
+            "sidebar sidebar opencases  opencases   opencases   opencases   opencases   opencases "
+            "sidebar sidebar first first    second   second third third"
+            "sidebar sidebar first first    second   second third third"
+            "sidebar sidebar . . . . moreclients moreclients"
+            "sidebar sidebar closedcases closedcases closedcases closedcases closedcases closedcases"
+            "sidebar sidebar fifth fifth sixth sixth seventh seventh"
+            "sidebar sidebar fifth fifth sixth sixth seventh seventh"
+            "footer   footer   footer   footer   footer   footer   footer footer"
+        }
+         
+      
+      }
+      
+        @media only screen and (max-width: 1240px) {
+        #grid {
+          grid-template-columns: repeat(6, 145px);
+             grid-row-gap: 10px;
+          grid-template-areas: 
+            "header   header   header   header   header   header"
+            "sidebar sidebar opencases  opencases   opencases   opencases"
+            "sidebar sidebar first first    second   second"
+            "sidebar sidebar first first    second   second"
+            "sidebar sidebar third  third   third   third"
+            "sidebar sidebar . . moreclients moreclients"
+            "sidebar sidebar closedcases closedcases closedcases closedcases"
+            "sidebar sidebar fifth fifth sixth seventh"
+            "sidebar sidebar fifth fifth sixth seventh"
+            "footer   footer   footer   footer   footer   footer"
+        }
+         
+      }
+      
+      
+      
+      @media only screen and (max-width: 975px) {
+        #grid {
+          grid-template-columns: repeat(4, 25%);
+             grid-row-gap: 10px;
+          grid-template-areas: 
+       
+           "header header header header"
+            "sidebar sidebar sidebar sidebar"
+            "opencases opencases opencases opencases"
+            "first first first first"
+            "second  second second second"
+            "third third third third"
+            "closedcases closedcases closedcases closedcases"
+            "fifth fifth fifth fifth"
+            "sixth sixth sixth sixth"
+            "seventh seventh seventh seventh"
+            "moreclients moreclients moreclients moreclients"
+            "footer footer footer footer"
+        }
+         
+      }
+      
+      @media only screen and (max-width: 655px) {
+        #grid {
+          grid-template-columns: repeat(2, 50%); 
+        grid-row-gap: 10px;
+          grid-template-areas: 
+            "header header"
+            "sidebar  sidebar"
+            "opencases opencases"
+            "first first"
+            "second second"
+            "third  third"
+            "closedcases closedcases"
+            "fifth fifth"
+            "sixth sixth"
+            "seventh seventh"
+            "moreclients moreclients"
+            "footer footer"
+        }
+      }

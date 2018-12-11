@@ -1,0 +1,156 @@
+#grid {
+        display:grid;
+        justify-content: center;
+        grid-gap:10px;
+        grid-template-rows: auto;
+      }
+      
+ #header {
+        grid-area: header;
+        background-color:slategray;
+      }
+
+
+     #join {
+    background-color:#00B289;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 10px;
+    border:none;
+    border-radius: 8px;
+    cursor: pointer;
+    
+        }
+
+      #join a { color: white;}
+     
+     #login{
+     background-color:#00B289;
+     color:  white;
+        }
+
+     #title {
+    text-align: center;
+    color: #00b2a9;
+    }
+
+.row {
+    margin-left: 100px;
+    margin-right: 100px;
+    
+      }
+
+
+
+  #lede {
+        grid-area: lede;
+      }
+      
+      #second {
+        grid-area: second;
+      }
+
+      #third {
+      grid-area: third;
+      }
+      
+      #fourth {
+      grid-area: fourth;
+      }
+
+      #fifth {
+      grid-area: fifth;
+      }
+      
+      #second .card, #third .card, #fourth .card, #fifth .card {
+      border:0;
+        }
+
+
+   #sidebar {
+   grid-area: sidebar;
+      }
+
+        #button {
+        background-color:#C9E3DB;
+        margin-bottom: 10px;
+        }
+               
+        .btn.btn-primary{ background-color:#00b2a9;
+           border: #00b2a9; }
+               
+
+   #footer {
+       grid-area: footer;
+       background-color:#C9E3DB;
+     }
+
+        .list-inline-item {
+        font-size:170%;
+        }
+
+        button.btn{ background-color:#00b2a9;
+           border: #00b2a9; }
+
+       #footer a {
+        color: black;
+        }
+             
+       
+      @media only screen and (min-width: 1241px) {
+        #grid {
+          grid-template-columns: repeat(8, 12%);
+          grid-template-areas: 
+            "header   header   header   header   header   header header header"
+            "lede    lede    lede    lede    second   second   sidebar sidebar"
+            "lede    lede    lede    lede    third    third   sidebar sidebar"
+            "fourth  fourth   fifth   fifth   fifth   fifth    fifth   fifth"
+            "footer   footer   footer   footer   footer   footer   footer footer"
+            "footer   footer   footer   footer   footer   footer   footer footer"
+        }
+      }
+      
+      @media only screen and (max-width: 1240px) {
+        #grid {
+          grid-template-columns: repeat(6, 16%);
+          grid-template-areas: 
+            "header   header   header   header   header   header"
+            "lede    lede    lede    lede    sidebar sidebar"
+            "second   second   third    third    sidebar sidebar"
+            "fourth  fourth   fifth   fifth  fifth    fifth"
+            "footer footer  footer   footer  footer footer"
+            "footer   footer   footer   footer   footer footer"
+        }
+      }
+      
+      @media only screen and (max-width: 975px) {
+        #grid {
+          grid-template-columns: repeat(4, 25%);
+          grid-template-areas: 
+            "header   header   header   header"
+            "lede    lede    lede    lede"
+            "second   second   third    third"
+            ".     sidebar   sidebar   ."
+            "fourth  fourth   fifth   fifth"
+            "footer  footer  footer  footer"
+            "footer   footer   footer   footer"
+        }
+      }
+      
+      @media only screen and (max-width: 655px) {
+        #grid {
+          grid-template-columns: repeat(2, 50%); 
+          grid-template-areas: 
+            "header   header"
+            "lede    lede"
+            "second   second"
+            "third    third"
+            "sidebar   sidebar"
+            "fourth  fourth"
+            "fifth  fifth"
+            "footer   footer"
+        }
+          
+      
+
+      }
